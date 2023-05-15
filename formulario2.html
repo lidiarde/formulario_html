@@ -7,19 +7,19 @@
     <title>Formulário HTML II</title>
     <style>
         fieldset {
-            margin-right: auto;
-            width: 550px;
-            padding: 1em;
+            margin: auto;
+            width: 520px;
+            padding: 0.8em;
             border: 5px solid rgb(243, 113, 113);
             border-radius: 1em;
             font: 1.1em arial;
-            
+           
         }
 
         label {
             display:inline-block;
-            width: 92px;
-            text-align:initial;
+            width: 100px;
+            text-align:left;
             border-bottom: #999;
         }
 
@@ -36,7 +36,7 @@
             width: 100px;
             margin:inherit;
             display:inline-flex;
-            width: 25px;
+            width: 60px;
             text-align:end;
         }
         .button {
@@ -49,13 +49,17 @@
         }
         body {
             background-color: rgb(67, 115, 139);
-            align-self: auto;
+            
+        }
+        .p_img {
+            text-align: center;
+            margin-bottom: 0%;
         }
         
     </style>
 </head>
 <body>
-    <h2 style="text-align: left;">FORMULÁRIO HTML II - PADRÕES WEB</h2>
+    <h2 style="text-align: center;">FORMULÁRIO HTML II - PADRÕES WEB</h2>
     
     <div id="pessoais">
     <form action="/action_page.php" target="_self" method="post" autocomplete="on">
@@ -104,15 +108,16 @@
                 <label for="fname">Local de trabalho:</label>
                 <input type="text" id="fname" name="fname" value=""><br><br>
 
-                <textarea name="message" rows="5" cols="63" placeholder="Descreva sua experiência"></textarea>
-            </fieldset>
-        </div>
-        
+                <textarea name="message" rows="5" cols="62" placeholder="Descreva sua experiência"></textarea><br>
+            
+         <br>       
         <button class="button" type="submit" onclick="Gravar">Gravar</button>
         <button class="button" type="reset" onclick="Limpar">Limpar</button>    
+        <p class="p_img"><a href="index.html"><img src="voltar.png" alt="voltar" style="padding-right: 0%;" width="30" height="30"></a></a></p>
+            </fieldset>    
+    </div>
     </form>
-    <br><br>
-    <a href="index.html"><img src="voltar.png" alt="voltar" width="30" height="30"></a></a>
     
+       
 </body>
 </html>
